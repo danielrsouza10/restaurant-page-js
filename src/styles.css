@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.menu-bar {
+  display: flex;
+  border: 1px solid black;
+  width: 100vw;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.big-card {
+  border: 1px solid red;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.big-card__right {
+  display: flex;
+}
+
+.discount-card {
+  border: 1px solid black;
+}

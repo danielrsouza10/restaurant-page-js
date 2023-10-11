@@ -39,3 +39,15 @@ For Example:
 Now each time you need to update your project’s live preview, you can simply npm run <YourScriptName> in your project’s terminal.
 To learn more about this, here’s a short tutorial video on Node Package Manager Scripts.
 Recall that the source branch for GitHub Pages is set in your repository’s settings.
+
+INSPIRATION
+
+https://dribbble.com/shots/22259000-TasteXpress-Restaurant-Dashboard-Design
+
+INSPIRATION 3
+
+https://dribbble.com/shots/22706692-Restaurant-Website-Design
+
+INSPIRATION 4
+
+https://dribbble.com/shots/18936097-Foody-Restaurant-Landing-Page-UI
