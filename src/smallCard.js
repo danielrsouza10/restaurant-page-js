@@ -3,7 +3,7 @@ function smallCard(img, title, description, price) {
         <div class="small-card">
             <a href="#">
                 <img src="${img}" alt="${img}">
-                <h1>${title}</h1>
+                <span class="small-card__title">${title}</span>
                 <p>${description}</p>
                 <span>${"$ " + price}</span>
             </a>

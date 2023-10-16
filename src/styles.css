@@ -2,16 +2,23 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+body {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .menu-bar {
   display: flex;
   border: 1px solid black;
-  width: 100vw;
   height: 70px;
   justify-content: space-around;
   align-items: center;
@@ -41,4 +48,22 @@ a {
 
 .discount-card {
   border: 1px solid black;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px;
+}
+
+.small-card {
+  text-align: center;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.small-card__title {
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
 }
