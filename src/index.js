@@ -12,53 +12,40 @@ const element = document.createElement("div");
 element.className = "element";
 
 function component() {
-  cardContainer.innerHTML = smallCard(
-    "../assets/images/food01.jpeg",
-    "Tomato Salad",
-    "Fresh and healthy",
-    8.99
-  );
-  cardContainer.innerHTML += smallCard(
-    "../assets/images/food01.jpeg",
-    "French Fries",
-    "Salty and Tasty",
-    5.99
-  );
-  cardContainer.innerHTML += smallCard(
-    "../assets/images/food01.jpeg",
-    "Prime Chicken",
-    "Crispy and Spicey",
-    13.99
-  );
-  cardContainer.innerHTML += smallCard(
-    "../assets/images/food01.jpeg",
-    "Potato chicken",
-    "Big, delicious and",
-    50.0
-  );
-
   element.innerHTML = menuBar();
-  element.innerHTML += bigCard("../assets/images/food01.jpeg");
-
-  element.appendChild(cardContainer);
+  element.innerHTML += bigCard();
+  element.innerHTML += smallCard();
 
   return element;
+}
+
+function home() {
+  element.innerHTML = "";
+  element.innerHTML = menuBar();
+  element.innerHTML += bigCard();
+  element.innerHTML += smallCard();
+}
+
+function menu() {
+  element.innerHTML = "";
+  element.innerHTML = menuBar();
+  element.innerHTML += smallCard();
 }
 
 content.appendChild(component());
 
 const menu = document.querySelector("#menu");
-menu.addEventListener("click", () => {
-  content.innerHTML = "";
-  element.innerHTML = menuBar();
-  element.appendChild(cardContainer);
-  content.appendChild(element);
-});
-
-const home = document.querySelector("#home");
-home.addEventListener("click", () => {
-  content.innerHTML = "";
-  element.innerHTML = menuBar();
-  content.appendChild(element);
-  // content.appendChild(component());
+menu.addEventListener("click", (e) => {
+  const target = e.target.innerText;
+  target.innerText;
+  if (target === "Home") {
+    home();
+  } else if (target === "Menu") {
+    menu();
+  }
+  // element.innerHTML = "";
+  // element.innerHTML = menuBar();
+  // element.innerHTML += smallCard();
+  // element.appendChild(cardContainer);
+  // content.appendChild(element);
 });

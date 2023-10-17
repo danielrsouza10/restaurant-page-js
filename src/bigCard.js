@@ -1,4 +1,4 @@
-function bigcard(img) {
+function bigcard() {
   return `
     <div class="big-card">
         <div class="big-card__left">
@@ -18,7 +18,7 @@ function bigcard(img) {
                 </div>
             </div>
             <div class="big-card__image">
-                <img src="${img}" alt="big-card__image">
+                <img src="../assets/images/food01.jpeg" alt="big-card__image">
             </div>
         </div>
     </div>
