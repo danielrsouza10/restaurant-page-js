@@ -10,14 +10,16 @@ function menuBar() {
     <div class="menu-bar">
         <h1 >Foody</h1>
         <ul class='menu-links'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="menu">Menu</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <div>
-            <span>Cart-icon</span>
-            <button type="button">Sign Up</button>
+        <div class="menu-bar__buttons">
+          <a hred="#"><span class="material-symbols-outlined">
+          shopping_cart
+          </span></a>
+          <button type="button">Sign Up</button>
         </div>
     </div>
   `;

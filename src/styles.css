@@ -7,18 +7,31 @@
 
 a {
   text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 body {
+  /* border: 1px solid black; */
+}
+
+.element {
+  padding-bottom: 100px;
   margin: 0 auto;
+  background-color: #f0f0ed;
   width: 80%;
-  border: 1px solid black;
-  border-radius: 10px;
+  max-width: 1100px;
+  border-radius: 20px;
+  box-shadow: 12px 10px 9px -4px rgba(0, 0, 0, 0.1);
 }
 
 .menu-bar {
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 70px;
   justify-content: space-around;
   align-items: center;
@@ -30,40 +43,110 @@ body {
   gap: 20px;
 }
 
+.menu-bar__buttons {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-bar__buttons > button {
+  width: 100px;
+  height: 30px;
+  border-style: none;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #ff8d09;
+}
+
 .big-card {
-  border: 1px solid red;
+  margin: 20px 50px;
+  /* border: 1px solid red; */
   padding: 50px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .bid-card__title > span {
+  margin-bottom: 30px;
+  display: block;
   font-size: 2.5rem;
+  width: 300px;
+}
+
+.big-card__left {
 }
 
 .big-card__right {
   display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.big-card__image > img {
+  width: 350px;
+  height: auto;
+}
+
+.bid-card__buttons > button {
+  width: 130px;
+  height: 30px;
+  border-style: none;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #ff8d09;
+  /* font-weight: ; */
 }
 
 .discount-card {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  position: absolute;
+  width: 100px;
+  height: 75px;
+  font-size: 0.6rem;
+  border-radius: 20px;
+  box-shadow: 12px 10px 9px -4px rgba(0, 0, 0, 0.1);
+}
+
+.discount-percentage {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .card-container {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
 }
 
 .small-card {
   text-align: center;
-  width: 200px;
-  border: 1px solid black;
-  border-radius: 10px;
+  width: 150px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.small-card__image {
+  width: 150px;
+  height: auto;
+}
+
+.small-card__description {
+  background-color: #ffffff;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .small-card__title {
   display: block;
-  font-size: 1.3em;
+  font-size: 1rem;
   font-weight: bold;
 }
