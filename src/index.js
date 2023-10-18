@@ -1,6 +1,7 @@
 import bigCard from "./bigCard";
 import smallCard from "./smallCard";
 import menuBar from "./menuBar";
+import contact, { contactPage } from "./contact";
 import "./styles.css";
 
 const content = document.getElementById("content");
@@ -19,33 +20,35 @@ function component() {
   return element;
 }
 
-function home() {
+function renderHome() {
   element.innerHTML = "";
   element.innerHTML = menuBar();
   element.innerHTML += bigCard();
   element.innerHTML += smallCard();
 }
 
-function menu() {
+function renderMenu() {
   element.innerHTML = "";
   element.innerHTML = menuBar();
   element.innerHTML += smallCard();
 }
 
+function renderContact() {
+  element.innerHTML = "";
+  element.innerHTML = menuBar();
+  element.innerHTML += contactPage();
+}
+
 content.appendChild(component());
 
-const menu = document.querySelector("#menu");
-menu.addEventListener("click", (e) => {
+document.addEventListener("click", (e) => {
   const target = e.target.innerText;
   target.innerText;
   if (target === "Home") {
-    home();
+    renderHome();
   } else if (target === "Menu") {
-    menu();
+    renderMenu();
+  } else if (target === "Contact") {
+    renderContact();
   }
-  // element.innerHTML = "";
-  // element.innerHTML = menuBar();
-  // element.innerHTML += smallCard();
-  // element.appendChild(cardContainer);
-  // content.appendChild(element);
 });

@@ -1,11 +1,4 @@
 function menuBar() {
-  //   const menuBar = document.createElement("div");
-  //   const menuLinks = document.createElement("ul");
-
-  //   menuLinks.innerHTML = `<h1>Ola Mundo!</h1>`;
-
-  //   menuBar.appendChild(menuLinks);
-
   return `
     <div class="menu-bar">
         <h1 >Foody</h1>
